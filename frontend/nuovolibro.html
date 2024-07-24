@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Nuovo libro</title>
+</head>
+
+<body>
+    <div id="common-container"></div>
+    <div class="container">
+        <div class="margin-stand">
+            <h1>Nuovo libro</h1>
+            <p>Aggiungi un nuovo libro</p>
+            <form id="book-form">
+                <div class="div-input">
+                    <label for="title">Titolo</label>
+                    <input type="text" name="title" id="title" required>
+                </div>
+                <br>
+                <div class="div-input">
+                    <label for="description">Descrizione</label>
+                    <input type="text" name="description" id="description" required>
+                </div>
+                <br>
+                <div class="div-input">
+                    <label for="year">Anno</label>
+                    <input type="date" name="year" id="year" required>
+                </div>
+                <br>
+                <div class="div-input">
+                    <label for="categoryId">Categoria</label>
+                    <select name="categoryId" id="categoryId" required></select><br><br>
+                </div>
+                <br>
+                <div class="div-input">
+                    <label for="authorId">Autore</label>
+                    <select name="authorId" id="authorId" required></select><br><br>
+                </div>
+                <br>
+                <button type="submit">Aggiungi libro</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="nuovolibro.js"></script>
+    <script src="common.js"></script>
+
+</body>
+
+</html>

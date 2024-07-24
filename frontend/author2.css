@@ -1,0 +1,59 @@
+.author-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.author {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+}
+
+.author:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.author:nth-child(odd) {
+    background-color: #e9e9e9;
+}
+
+.author:hover {
+    background-color: #d9d9d9;
+}
+
+.author h2, .author p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 1em;
+}
+
+.author h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .author {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .author h2, .author p {
+        width: 100%;
+        text-align: left;
+        padding: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .author h2 {
+        font-size: 1em;
+    }
+
+    .author p {
+        font-size: 0.9em;
+    }
+}
